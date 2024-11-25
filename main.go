@@ -8,5 +8,6 @@ import (
 
 func main() {
 	logger := log.New(os.Stdout, "", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
-	appClient := client.New()
+	appClient := client.New(logger)
+	appClient.Send()
 }
