@@ -1,5 +1,4 @@
 syntax = "proto3";
-package transitpdx;
 option go_package = "github.com/dangrmous/transit-pdx-service";
 
 message StopId {
@@ -7,7 +6,7 @@ message StopId {
 }
 
 message NextScheduledTimes {
-  repeated int32 scheduled_time = 2;
+  repeated int32 scheduled_times = 2;
 }
 
 service TransitPDX {
